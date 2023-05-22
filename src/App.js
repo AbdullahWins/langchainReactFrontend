@@ -27,7 +27,7 @@ function App() {
     } catch (error) {
       console.error("Error submitting data:", error);
       setError(
-        "An error occurred while submitting the data. Please try again."
+        "An error occurred while submitting the data. Please try again later."
       );
     }
   };
