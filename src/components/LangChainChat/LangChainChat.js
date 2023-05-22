@@ -28,14 +28,6 @@ const LangChainChat = () => {
 
   console.log(response);
 
-  // Function to render the response from server.js
-  // const renderPoints = () => {
-  //   const points = response.split("\n").map((point, index) => {
-  //     return <div key={index}>{point}</div>;
-  //   });
-  //   return points;
-  // };
-
   return (
     <div className="flex flex-col items-center justify-center gap-6 w-full">
       <h1 className="text-3xl font-bold py-6">Chat With AI</h1>
@@ -52,7 +44,7 @@ const LangChainChat = () => {
           Generate
         </button>
       </form>
-      {/* <div className="text-center">{renderPoints()}</div> */}
+      <div className="text-center">{response.response}</div>
       {/* <div className="text-center">{response}</div> */}
       {error && <div className="text-red-500">{error}</div>}
     </div>
