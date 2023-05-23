@@ -42,6 +42,7 @@ const BusinessNameGenerator = () => {
         className="flex flex-col items-center justify-center gap-6"
       >
         <input
+          required
           className="input input-bordered w-72"
           type="text"
           placeholder="what the company is about?"

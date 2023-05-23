@@ -13,7 +13,7 @@ const LangChainChat = () => {
         data: e.target[0].value,
       };
       const axiosResponse = await axios.post(
-        `${process.env.REACT_APP_LANGCHAIN_BACKEND_BASE_URL}chat`,
+        `${process.env.REACT_APP_LANGCHAIN_BACKEND_BASE_URL}/chat`,
         requestData
       );
       console.log("Response:", axiosResponse.data);
@@ -36,6 +36,7 @@ const LangChainChat = () => {
         className="flex flex-col items-center justify-center gap-6"
       >
         <input
+          required
           className="input input-bordered w-72"
           type="text"
           placeholder="what the company is about?"
